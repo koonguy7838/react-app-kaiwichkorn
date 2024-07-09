@@ -1,8 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
-import Mycontact from "./mycontact";
+
 export const meta: MetaFunction = () => {
   return [
-    { title: "Sonic Remix App" },
+    { title: "New Remix App" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
@@ -43,16 +43,6 @@ export default function Index() {
           </a>
         </li>
       </ul>
-       <h1 className="text-3xl">Welcome to Remix</h1>
-      <ul className="list-disc mt-4 pl-6 space-y-2">
-      <h1>mycontact</h1>
-    <li>Author : kaiwichkorn ketbuppha</li>
-    <li>class : information Technolong</li>
-    <li>E-mail : kaiwichkorn.ket@rmutto.ac.th</li>
-
-        </ul>
-        <Mycontact/>
     </div>
   );
 }
-
